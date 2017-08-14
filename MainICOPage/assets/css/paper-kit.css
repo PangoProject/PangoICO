@@ -6401,8 +6401,8 @@ textarea.form-control {
     width: 250.625em;
     height: 43.75em;
 
-    -webkit-animation: cloudLoop 220s linear infinite;
-    animation: cloudLoop 220s linear infinite;
+    -webkit-animation: cloudLoop 150s linear infinite;
+    animation: cloudLoop 150s linear infinite;
 }
 
 @keyframes cloudLoop {
