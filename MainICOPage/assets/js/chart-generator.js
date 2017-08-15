@@ -26,10 +26,10 @@ chartData1 = {
 };
 
 chartData2 = {
-    labels: ["Development", "Marketing", "Legal", "Infrastructure","R&D","Team Growth"],
+    labels: ["Development", "Marketing", "Team Growth", "Legal", "Infrastructure","R&D"],
     datasets: [{
         backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f","#FE8651","#C98170","#FED751"],
-        data: [35, 20, 10,10,10,15]
+        data: [35, 20, 15,10,10,10]
     }]
 };
 

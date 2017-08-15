@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+    <script src="assets/js/pace.min.js"></script>
+    <link href="assets/css/pace-loader.css" rel="stylesheet" />
     <meta charset="utf-8"/>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
@@ -114,10 +116,11 @@
     <a href="#about" class="scroll-down" address="true"> </a>
 
     <div class="main">
+        <!--What is pango-->
         <div class="section section-gray">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-md-10 offset-md-1 wow fadeIn">
+                    <div class="col-md-10 offset-md-1 wow fadeIn" data-wow-offset="20">
                         <h2 id="about" class="title">What is the Pango Project?</h2>
                         <h5 class="description text-justify">Quisque velit nisi, pretium ut lacinia in, elementum id
                             enim. Mauris
@@ -138,91 +141,179 @@
                         <br>
                         <a href="#" class="btn btn-info button-box">Read The White paper</a>
                         <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
-                        <a href="#" class="btn btn-info button-box">View Source on Git</a>
-                    </div>
-                </div>
-                <br/><br/>
-                <div class="row text-center">
-                    <div class="col-md-3 wow fadeInUp" data-wow-offset="10">
-                        <div class="info">
-                            <div class="icon icon-info">
-                                <i class="nc-icon nc-globe"></i>
-                            </div>
-                            <div class="description">
-                                <h4 class="info-title">Decentralised</h4>
-                                <p class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                                    Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan id
-                                    imperdiet et, porttitor at sem.</p>
-                                <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-offset="10">
-                        <div class="info">
-                            <div class="icon icon-danger">
-                                <i class="nc-icon nc-paper"></i>
-                            </div>
-                            <div class="description">
-                                <h4 class="info-title">Public</h4>
-                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
-                                    libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor
-                                    at sem.</p>
-                                <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-offset="10">
-                        <div class="info">
-                            <div class="icon icon-warning">
-                                <i class="nc-icon nc-spaceship"></i>
-                            </div>
-                            <div class="description">
-                                <h4 class="info-title">Autonomous</h4>
-                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
-                                    libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor
-                                    at sem.</p>
-                                <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 wow fadeInUp" data-wow-offset="10">
-                        <div class="info">
-                            <div class="icon icon-sucess">
-                                <i class="fa fa-chain"></i>
-                            </div>
-                            <div class="description">
-                                <h4 class="info-title">Immutable</h4>
-                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
-                                    libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et, porttitor
-                                    at sem.</p>
-                                <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                            </div>
-                        </div>
+                        <a href="#" class="btn btn-info button-box">View Source on Git </a>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Key points-->
+        <div class="section">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-10 offset-md-1 wow fadeIn">
+                        <h2 class="title">Key Points</h2>
+                        <!--Row 1-->
+                        <div class="row text-center">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.0s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-primary">
+                                        <i class="nc-icon nc-globe"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Decentralised</h4>
+                                        <p class="description">Quisque velit nisi, pretium ut lacinia in, elementum id
+                                            enim.
+                                            Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan
+                                            id
+                                            imperdiet et, porttitor at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-danger">
+                                        <i class="nc-icon nc-paper"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Public</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut
+                                            libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+                                            porttitor
+                                            at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-warning">
+                                        <i class="nc-icon nc-spaceship"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Autonomous</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut
+                                            libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+                                            porttitor
+                                            at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-sucess">
+                                        <i class="fa fa-chain"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Immutable</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut
+                                            libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+                                            porttitor
+                                            at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--row 2-->
+                        <div class="row text-center">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.0s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-primary">
+                                        <i class="nc-icon nc-globe"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Decentralised</h4>
+                                        <p class="description">Quisque velit nisi, pretium ut lacinia in, elementum id
+                                            enim.
+                                            Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan
+                                            id
+                                            imperdiet et, porttitor at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-danger">
+                                        <i class="nc-icon nc-paper"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Public</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut
+                                            libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+                                            porttitor
+                                            at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-warning">
+                                        <i class="nc-icon nc-spaceship"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Autonomous</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut
+                                            libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+                                            porttitor
+                                            at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="20">
+                                <div class="info">
+                                    <div class="icon icon-sucess">
+                                        <i class="fa fa-chain"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Immutable</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut
+                                            libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
+                                            porttitor
+                                            at sem.</p>
+                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div class="section text-justify section">
+            </div>
+        </div>
+        <!--why do we need pango-->
+        <div class="section section-gray">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 wow fadeIn" data-wow-offset="10">
+                    <div class="col-md-6 wow fadeIn" data-wow-offset="20">
                         <div class="row">
                             <div class="container">
                                 <h2 id="why" class="title">Why Do we need Pango</h2>
-                                <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                                <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id
+                                    enim.
                                     Nulla quis lorem ut libero malesuada feugiat.</h5>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200">
                                 <div class="info info-horizontal">
                                     <div class="icon icon-success">
                                         <i class="nc-icon nc-layout-11"></i>
                                     </div>
                                     <div class="description">
                                         <h4 class="info-title">Components</h4>
-                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+                                            quis
                                             lorem ut libero malesuada feugiat.</p>
                                         <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
@@ -233,20 +324,22 @@
                                     </div>
                                     <div class="description">
                                         <h4 class="info-title">Beautiful Gallery</h4>
-                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+                                            quis
                                             lorem ut libero malesuada feugiat.</p>
                                         <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 wow fadeInLeft" data-wow-offset="200">
                                 <div class="info info-horizontal">
                                     <div class="icon icon-danger">
                                         <i class="nc-icon nc-touch-id"></i>
                                     </div>
                                     <div class="description">
                                         <h4 class="info-title">Secured</h4>
-                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+                                            quis
                                             lorem ut libero malesuada feugiat.</p>
                                         <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
@@ -257,7 +350,8 @@
                                     </div>
                                     <div class="description">
                                         <h4 class="info-title">Fast Prototyping</h4>
-                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+                                            quis
                                             lorem ut libero malesuada feugiat..</p>
                                         <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
@@ -266,7 +360,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-5 offset-md-1 wow fadeInUp" data-wow-offset="500">
+                    <div class="col-md-5 offset-md-1 wow fadeInRight" data-wow-offset="500">
                         <div class="iphone-container">
                             <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/iphone.png"
                                  style="width: auto; height: auto">
@@ -275,42 +369,44 @@
                 </div>
             </div>
         </div>
-
-        <div class="section section-gray text-justify section">
+        <!--who should use pango-->
+        <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2  text-center">
+                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 id="who" class="title">Who Should Use Pango</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="ipad-container">
+                        <div class="ipad-container wow fadeInLeft" data-wow-offset="500">
                             <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/ipad.png">
                         </div>
                     </div>
 
-                    <div class="col-md-4 offset-1">
+                    <div class="col-md-4 offset-1 wow fadeInRight" data-wow-offset="200">
                         <div class="info info-horizontal">
-                            <div class="icon icon-info">
-                                <i class="nc-icon nc-atom" aria-hidden="true"></i>
+                            <div class="icon icon-primary">
+                                <i class="nc-icon nc-globe" aria-hidden="true"></i>
                             </div>
                             <div class="description">
-                                <h4 class="info-title">For Developers</h4>
-                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                <h4 class="info-title">Institutions</h4>
+                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
                                     libero malesuada feugiat.</p>
                             </div>
                         </div>
-
                         <div class="info info-horizontal">
                             <div class="icon icon-success">
                                 <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
                             </div>
                             <div class="description">
-                                <h4 class="info-title">For Designers Only</h4>
-                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                <h4 class="info-title">Recrutment Agencies</h4>
+                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
                                     libero malesuada feugiat.</p>
                             </div>
                         </div>
@@ -319,8 +415,9 @@
                                 <i class="nc-icon nc-tie-bow" aria-hidden="true"></i>
                             </div>
                             <div class="description">
-                                <h4 class="info-title">Beautiful Examples</h4>
-                                <p>Speed up your development time or get inspired with the large number of example
+                                <h4 class="info-title">Graduates</h4>
+                                <p>Speed up your development time or get inspired with the large number of
+                                    example
                                     pages.</p>
                             </div>
                         </div>
@@ -329,18 +426,19 @@
                 </div>
             </div>
         </div>
-
-        <div class="section section text-justify section">
+        <!--white paper-->
+        <div class="section section-gray">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2  text-center">
+                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 id="whitepaper" class="title">White Paper</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-10 offset-md-1 wow fadeIn">
+                    <div class="col-md-10 offset-md-1 wow fadeInUp" data-wow-offset="20">
                         <a href="#" class="btn btn-info button-box">Read The White paper</a>
                         <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
                         <a href="#" class="btn btn-info button-box">View Source on Git</a>
@@ -348,74 +446,78 @@
                 </div>
             </div>
         </div>
-
-
+        <!--ICO breakdown-->
         <div class="ico-breakdown section-image">
             <div class="container">
                 <div class="row">
-                    <div class="col text-center">
+                    <div class="col text-center wow fadeIn" data-wow-offset="200">
                         <h2 id="ico" class="title">ICO Breakdown</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-5 offset-md-1">
+                    <div class="col-sm-5 offset-md-1 wow fadeIn" data-wow-offset="50">
                         <div class="info">
                             <div class="icon">
                                 <i class="nc-icon nc-atom" aria-hidden="true"></i>
                             </div>
                             <h4 class="title">For Developers</h4>
-                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                libero
                                 malesuada feugiat.</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-5">
+                    <div class="col-sm-5 wow fadeIn" data-wow-offset="50">
                         <div class="info">
                             <div class="icon">
                                 <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
                             </div>
                             <h4 class="title">For Designers</h4>
-                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                libero
                                 malesuada feugiat.</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="row bottom-line">
-                    <div class="col-sm-5 offset-md-1">
+                    <div class="col-sm-5 offset-md-1 wow fadeIn" data-wow-offset="50">
                         <div class="info">
                             <div class="icon">
                                 <i class="nc-icon nc-paper" aria-hidden="true"></i>
                             </div>
                             <h4 class="title">Example Pages Included</h4>
-                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                libero
                                 malesuada feugiat.</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-5">
+                    <div class="col-sm-5 wow fadeIn" data-wow-offset="50">
                         <div class="info">
                             <div class="icon">
                                 <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
                             </div>
                             <h4 class="title">Save Time</h4>
-                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                libero
                                 malesuada feugiat.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
+        <!--ico Distribution-->
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
+                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 class="title">ICO Distribution</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
@@ -437,9 +539,10 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
+                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 class="title">Funding Distribution</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
@@ -461,13 +564,14 @@
                 </div>
             </div>
         </div>
-
-        <div class="section section-gray text-justify">
+        <!--timeline-->
+        <div class="section section-gray">
             <div class="container">
                 <div class="row">
-                    <div class="col text-center">
+                    <div class="col text-center wow fadeIn" data-wow-offset="20">
                         <h2 id="timeline" class="title">Project Timeline</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
@@ -478,16 +582,20 @@
                                 <li>
                                     <div>
                                         <time>1934</time>
-                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                        praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis
+                                        praesentium At vero eos et accusamus et iusto odio dignissimos ducimus
+                                        qui
                                         blanditiis praesentium
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <time>1937</time>
-                                        Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse
-                                        finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in,
+                                        Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi.
+                                        Suspendisse
+                                        finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar
+                                        in,
                                         pretium non nisi.
                                     </div>
                                 </li>
@@ -495,21 +603,24 @@
                                     <div>
                                         <time>1940</time>
                                         Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at
-                                        pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin
+                                        pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet
+                                        sollicitudin
                                         eros.
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <time>1943</time>
-                                        In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius
+                                        In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse
+                                        varius
                                         volutpat mattis. Vestibulum id magna est.
                                     </div>
                                 </li>
                                 <li>
                                     <div>
                                         <time>1946</time>
-                                        In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius
+                                        In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse
+                                        varius
                                         volutpat mattis. Vestibulum id magna est.
                                     </div>
                                 </li>
@@ -519,14 +630,101 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="section section-gray text-justify">
+        <!--MVP demo-->
+        <div class="section section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
+                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
+                        <h2 id="team" class="title">Try the Pango Demo</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="space-top"></div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card card-pricing" data-color="orange">
+                            <div class="card-block">
+                                <div class="card-icon">
+                                    <span class="icon-simple"><i class="nc-icon nc-basket"></i></span>
+                                </div>
+                                <h3 class="card-title">$199</h3>
+
+                                <p class="card-description">
+                                    This is good if your company size is between 5 and 20 employees.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card card-pricing" data-color="yellow">
+                            <div class="card-block">
+                                <div class="card-icon">
+                                    <span class="icon-simple"><i class="nc-icon nc-watch-time"></i></span>
+                                </div>
+                                <h3 class="card-title">$249</h3>
+
+                                <p class="card-description">
+                                    This is good if your company size is between 21 and 59 employees.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card card-pricing" data-color="green">
+                            <div class="card-block">
+                                <div class="card-icon">
+                                    <span class="icon-simple"><i class="nc-icon nc-settings"></i></span>
+                                </div>
+                                <h3 class="card-title">$359</h3>
+
+                                <p class="card-description">
+                                    This is good if your company size is between 60 and 159 employees.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card card-pricing" data-color="blue">
+                            <div class="card-block">
+                                <div class="card-icon">
+                                    <span class="icon-simple"><i class="nc-icon nc-istanbul"></i></span>
+                                </div>
+                                <h3 class="card-title">$599</h3>
+
+                                <p class="card-description">
+                                    This is good if your company size is between 160 and 299 employees.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Pango Team-->
+        <div class="section section-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 id="team" class="title">Meet The Team behind Pango</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
@@ -541,7 +739,8 @@
                                     </a>
                                 </div>
                                 <p class="card-description text-center">
-                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
                                     libero malesuada feugiat.
                                 </p>
                             </div>
@@ -550,7 +749,8 @@
                                         class="fa fa-linkedin"></i></a>
                                 <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i
                                         class="fa fa-dribbble"></i></a>
-                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i
+                                        class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -565,7 +765,8 @@
                                     </a>
                                 </div>
                                 <p class="card-description text-center">
-                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
                                     libero malesuada feugiat.
                                 </p>
                             </div>
@@ -574,7 +775,8 @@
                                         class="fa fa-linkedin"></i></a>
                                 <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i
                                         class="fa fa-dribbble"></i></a>
-                                <a href="#pablo" class="btn btn-just-icon btn-pinterest"><i class="fa fa-pinterest"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-pinterest"><i
+                                        class="fa fa-pinterest"></i></a>
                             </div>
                         </div>
                     </div>
@@ -589,28 +791,32 @@
                                     </a>
                                 </div>
                                 <p class="card-description text-center">
-                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
                                     libero malesuada feugiat.
                                 </p>
                             </div>
                             <div class="card-footer text-center">
-                                <a href="#pablo" class="btn btn-just-icon btn-youtube"><i class="fa fa-youtube"></i></a>
-                                <a href="#pablo" class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-youtube"><i
+                                        class="fa fa-youtube"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-twitter"><i
+                                        class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i
+                                        class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
+        <!--contact-->
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
+                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 id="contact" class="title">Contact Pango</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                            Nulla
                             quis lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
@@ -698,9 +904,7 @@
 <script>
     new WOW().init();
 </script>
-
 <!--Chart.js include -->
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"
         integrity="sha256-VNbX9NjQNRW+Bk02G/RO6WiTKuhncWI4Ey7LkSbE+5s=" crossorigin="anonymous"></script>
 <script src="assets/js/piechartlables.js"></script>
