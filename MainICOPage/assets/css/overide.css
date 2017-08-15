@@ -154,3 +154,29 @@
 .nc-navlinks{
     padding-left: 5px;
 }
+
+nav li.active {
+    /* created active class for your li elements */
+    background-color: #EEEEEE;
+    border-bottom: 3px solid #51BCDA;
+}
+
+#top-menu li {
+    float: left;
+}
+
+#top-menu a {
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out;
+        /*color: #aaa;*/
+    text-decoration: none;
+}
+
+/*#top-menu a:hover {*/
+    /*color: #ffffff;*/
+/*}*/
+
+#top-menu li.active a {
+    color: #333;
+}

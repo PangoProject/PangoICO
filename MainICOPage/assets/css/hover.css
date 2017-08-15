@@ -14,6 +14,22 @@
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 }
+/* Grow-fast*/
+.hvr-growfast {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+.hvr-growfast:hover, .hvr-growfast:focus, .hvr-growfast:active {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
 
 /* Float Shadow */
 .hvr-float-shadow {
