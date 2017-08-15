@@ -25,6 +25,9 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="assets/css/nucleo-icons.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css"
+          rel="stylesheet">
+
 
     <!-- Other -->
     <link href="assets/css/animate.css" rel="stylesheet"/>
@@ -53,24 +56,28 @@
                             class="nc-icon nc-alert-circle-i"></i> About</a>
                 </li>
                 <li class="nav-item active">
-                    <a href="documentation/tutorial-components.html" class="nav-link"><i
-                            class="nc-icon nc-book-bookmark"></i> Why</a>
+                    <a href="#why" class="nav-link"><i
+                            class="icon-question"></i> Why</a>
                 </li>
                 <li class="nav-item">
-                    <a href="documentation/tutorial-components.html" class="nav-link"><i
-                            class="nc-icon nc-book-bookmark"></i> Who</a>
+                    <a href="#who" class="nav-link"><i
+                            class="icon-people"></i> Who</a>
                 </li>
                 <li class="nav-item">
-                    <a href="documentation/tutorial-components.html" class="nav-link"><i
-                            class="nc-icon nc-book-bookmark"></i> white paper </a>
+                    <a href="#whitepaper" class="nav-link"><i
+                            class="nc-icon nc-paper"></i> white paper </a>
                 </li>
                 <li class="nav-item">
-                    <a href="documentation/tutorial-components.html" class="nav-link"><i
-                            class="nc-icon nc-book-bookmark"></i> ICO</a>
+                    <a href="#ico" class="nav-link"><i
+                            class="icon-wallet"></i> ICO</a>
                 </li>
                 <li class="nav-item">
-                    <a href="documentation/tutorial-components.html" class="nav-link"><i
-                            class="nc-icon nc- nc-book-bookmark"></i> Contact US</a>
+                    <a href="#team" class="nav-link"><i
+                            class="nc-icon nc-circle-10"></i> Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><i
+                            class="icon-speech"></i> Contact US</a>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-default">MVP Demo</button>
@@ -129,7 +136,9 @@
                             tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Vivamus
                             suscipit tortor eget felis porttitor volutpat.</h5>
                         <br>
-                        <a href="#paper-kit" class="btn btn-info btn-round">Read The White paper</a>
+                        <a href="#" class="btn btn-info button-box">Read The White paper</a>
+                        <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
+                        <a href="#" class="btn btn-info button-box">View Source on Git</a>
                     </div>
                 </div>
                 <br/><br/>
@@ -197,10 +206,10 @@
         <div class="section text-justify section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeIn" data-wow-offset="10">
                         <div class="row">
                             <div class="container">
-                                <h2 class="title">Why Do we need pango</h2>
+                                <h2 id="why" class="title">Why Do we need Pango</h2>
                                 <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                                     Nulla quis lorem ut libero malesuada feugiat.</h5>
                             </div>
@@ -257,7 +266,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-5 offset-md-1">
+                    <div class="col-md-5 offset-md-1 wow fadeInUp" data-wow-offset="500">
                         <div class="iphone-container">
                             <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/iphone.png"
                                  style="width: auto; height: auto">
@@ -271,13 +280,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2  text-center">
-                        <h2 class="title">Who Should Use Pango</h2>
+                        <h2 id="who" class="title">Who Should Use Pango</h2>
                         <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
                 <div class="row">
-
                     <div class="col-md-6">
                         <div class="ipad-container">
                             <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/ipad.png">
@@ -322,12 +330,31 @@
             </div>
         </div>
 
+        <div class="section section text-justify section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2  text-center">
+                        <h2 id="whitepaper" class="title">White Paper</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-10 offset-md-1 wow fadeIn">
+                        <a href="#" class="btn btn-info button-box">Read The White paper</a>
+                        <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
+                        <a href="#" class="btn btn-info button-box">View Source on Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="ico-breakdown section-image">
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h2 class="title">ICO Breakdown</h2>
+                        <h2 id="ico" class="title">ICO Breakdown</h2>
                         <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
@@ -439,7 +466,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h2 class="title">Project Timeline</h2>
+                        <h2 id="timeline" class="title">Project Timeline</h2>
                         <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
@@ -498,7 +525,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center">
-                        <h2 class="title">Meet The Team behind Pango</h2>
+                        <h2 id="team" class="title">Meet The Team behind Pango</h2>
                         <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
@@ -582,7 +609,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center">
-                        <h2 class="title">Contact Pango</h2>
+                        <h2 id="contact" class="title">Contact Pango</h2>
                         <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
                             quis lorem ut libero malesuada feugiat.</h5>
                     </div>
@@ -674,7 +701,8 @@
 
 <!--Chart.js include -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" integrity="sha256-VNbX9NjQNRW+Bk02G/RO6WiTKuhncWI4Ey7LkSbE+5s=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"
+        integrity="sha256-VNbX9NjQNRW+Bk02G/RO6WiTKuhncWI4Ey7LkSbE+5s=" crossorigin="anonymous"></script>
 <script src="assets/js/piechartlables.js"></script>
 <script src="assets/js/chart-generator.js"></script>
 </html>

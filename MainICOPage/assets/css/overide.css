@@ -140,3 +140,7 @@
     bottom: 1.25%;
     visibility: visible;
 }
+.button-box {
+    text-align:center;
+    margin:10px;
+}
