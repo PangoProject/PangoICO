@@ -3,7 +3,7 @@
 
 <head>
     <script src="assets/js/pace.min.js"></script>
-    <link href="assets/css/pace-loader.css" rel="stylesheet" />
+    <link href="assets/css/pace-loader.css" rel="stylesheet"/>
     <meta charset="utf-8"/>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
@@ -74,6 +74,10 @@
                             class="icon-wallet"></i> ICO</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#timeline" class="nav-link"><i
+                            class="icon-clock"></i> Timeline</a>
+                </li>
+                <li class="nav-item">
                     <a href="#team" class="nav-link"><i
                             class="nc-icon nc-circle-10"></i> Team</a>
                 </li>
@@ -82,7 +86,10 @@
                             class="icon-speech"></i> Contact US</a>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-default">MVP Demo</button>
+                    <button type="button" class="btn btn-secondary button-box" data-toggle="modal"
+                            data-target="#mvpModal">
+                        MVP Demo
+                    </button>
                 </li>
             </ul>
         </div>
@@ -91,6 +98,7 @@
 <div class="wrapper">
 
     <div class="page-header clickThrough section-dark">
+        <!--partical canvas background-->
         <canvas class="heading-canvas" id="c"></canvas>
         <div class="filter"></div>
         <div class="content-center">
@@ -109,6 +117,7 @@
                     Authenticity</h2>
             </div>
         </div>
+        <!--animated clouds-->
         <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); ">
 
         </div>
@@ -139,9 +148,12 @@
                             tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Vivamus
                             suscipit tortor eget felis porttitor volutpat.</h5>
                         <br>
-                        <a href="#" class="btn btn-info button-box">Read The White paper</a>
-                        <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
-                        <a href="#" class="btn btn-info button-box">View Source on Git </a>
+                        <a href="#" class="btn btn-default button-box">Read The White paper</a>
+                        <button type="button" class="btn btn-info btn-lg button-box" data-toggle="modal"
+                                data-target="#mvpModal">
+                            Try the MVP Demo
+                        </button>
+                        <a href="#" class="btn btn-default button-box">View Source on Git </a>
                     </div>
                 </div>
             </div>
@@ -219,6 +231,7 @@
                                 </div>
                             </div>
                         </div>
+                        <hr class="wow fadeIn">
                         <!--row 2-->
                         <div class="row text-center">
                             <div class="col-md-3 wow fadeInUp" data-wow-delay="0.0s" data-wow-offset="20">
@@ -439,9 +452,12 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-10 offset-md-1 wow fadeInUp" data-wow-offset="20">
-                        <a href="#" class="btn btn-info button-box">Read The White paper</a>
-                        <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
-                        <a href="#" class="btn btn-info button-box">View Source on Git</a>
+                        <a href="#" class="btn btn-default button-box">Read The White paper</a>
+                        <button type="button" class="btn btn-info btn-lg button-box" data-toggle="modal"
+                                data-target="#mvpModal">
+                            Try the MVP Demo
+                        </button>
+                        <a href="#" class="btn btn-default button-box">View Source on Git </a>
                     </div>
                 </div>
             </div>
@@ -511,7 +527,7 @@
             </div>
         </div>
         <!--ico Distribution-->
-        <div class="section">
+        <div class="section section-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
@@ -537,7 +553,11 @@
                         </h5>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <!--Funding Distribution-->
+        <div class="section">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 class="title">Funding Distribution</h2>
@@ -630,95 +650,8 @@
                 </div>
             </div>
         </div>
-        <!--MVP demo-->
-        <div class="section section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
-                        <h2 id="team" class="title">Try the Pango Demo</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                            Nulla quis
-                            lorem ut libero malesuada feugiat.</h5>
-                    </div>
-                </div>
-                <div class="space-top"></div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="orange">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-basket"></i></span>
-                                </div>
-                                <h3 class="card-title">$199</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 5 and 20 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="yellow">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-watch-time"></i></span>
-                                </div>
-                                <h3 class="card-title">$249</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 21 and 59 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="green">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-settings"></i></span>
-                                </div>
-                                <h3 class="card-title">$359</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 60 and 159 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="blue">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-istanbul"></i></span>
-                                </div>
-                                <h3 class="card-title">$599</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 160 and 299 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!--Pango Team-->
-        <div class="section section-gray">
+        <div class="section section-image">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
@@ -840,7 +773,7 @@
                                       style="background-repeat: repeat; background-image: none; background-position: 0% 0%;"></textarea>
                             <div class="row">
                                 <div class="col-md-4 offset-md-4">
-                                    <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
+                                    <button class="btn btn-info btn-lg btn-fill">Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -853,23 +786,144 @@
 </div>
 
 
-<footer class="footer">
+<footer class="footer footer-black footer-big">
     <div class="container">
         <div class="row">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="http://www.creative-tim.com">Creative Tim</a></li>
-                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
-                    <li><a href="http://www.creative-tim.com/license">Licenses</a></li>
-                </ul>
-            </nav>
-            <div class="credits ml-auto">
-                    <span class="copyright">
-                        © <script>document.write(new Date().getFullYear())</script>, made with <i
-                            class="fa fa-heart heart"></i> by the Pango Project
-                    </span>
+            <div class="col-md-2 text-center col-sm-3 col-xs-12">
+                <h4>The Pango Project</h4>
+                <div class="social-area">
+                    <a class="btn btn-just-icon btn-round btn-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-just-icon btn-round btn-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-just-icon btn-round btn-google">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 offset-md-1 col-sm-9 col-xs-12">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="links">
+                            <ul class="uppercase-links stacked-links">
+                                <li>
+                                    <a href="#paper-kit">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Why
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Who
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        White Paper
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Ico
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="links">
+                            <ul class="uppercase-links stacked-links">
+                                <li>
+                                    <a href="#paper-kit">
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="links">
+                            <ul class="uppercase-links stacked-links">
+                                <li>
+                                    <a href="#paper-kit">
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        How it works
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Testimonials
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+                        <div class="links">
+                            <ul class="stacked-links">
+                                <li>
+                                    <h4>Powered by</h4>
+                                </li>
+                                <li>
+
+                                <a href="https://www.ethereum.org/" target="_blank"><img src="https://www.ethereum.org/images/logos/ETHEREUM-ICON_Black.png" style="height: 100px; width: auto" class="my-auto"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">
+                    <div class="pull-left">
+                        © <script>document.write(new Date().getFullYear())</script> Pango Project
+                    </div>
+                    <div class="links pull-right">
+                        <ul>
+                            <li>
+                                <a href="#paper-kit">
+                                    ICO terms
+                                </a>
+                            </li>
+                            |
+                            <li>
+                                <a href="#paper-kit">
+                                    Terms
+                                </a>
+                            </li>
+                            |
+                            <li>
+                                <a href="#paper-kit">
+                                    Privacy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 </footer>
 </body>
@@ -909,4 +963,33 @@
         integrity="sha256-VNbX9NjQNRW+Bk02G/RO6WiTKuhncWI4Ey7LkSbE+5s=" crossorigin="anonymous"></script>
 <script src="assets/js/piechartlables.js"></script>
 <script src="assets/js/chart-generator.js"></script>
+
+<div class="modal fade" id="mvpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="my-auto">Minimum Viable Product Demo</h2>
+            </div>
+            <div class="modal-body"> Far far away, behind the word mountains, far from the countries Vokalia and
+                Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with
+                the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
+                your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost
+                unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to
+                leave for the far World of Grammar.
+            </div>
+            <div class="modal-footer">
+                <div class="left-side">
+                    <button type="button" class="btn btn-primary btn-link" data-dismiss="modal">Demo Version</button>
+                </div>
+                <div class="divider"></div>
+                <div class="right-side">
+                    <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Testnet Version</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </html>
