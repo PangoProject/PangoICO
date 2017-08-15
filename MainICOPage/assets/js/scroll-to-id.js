@@ -9,7 +9,6 @@ $('a[href*="#"]')
         ) {
             var target = $(this.hash);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-            console.log(target);
             if (target.length) {
                 event.preventDefault();
                 $('html, body').animate({
@@ -41,4 +40,3 @@ $( window ).scroll( function() {
         $( '.back-to-top' ).removeClass( 'show-back-to-top' );
     }
 });
-

@@ -12,20 +12,23 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
     <meta name="viewport" content="width=device-width"/>
 
+    <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="assets/css/paper-kit.css" rel="stylesheet"/>
     <link href="assets/css/demo.css" rel="stylesheet"/>
 
     <!-- overide CSS -->
     <link href="assets/css/overide.css" rel="stylesheet"/>
+    <link href="assets/css/paper-kit-overide.css" rel="stylesheet"/>
 
     <!--     Fonts and icons     -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="assets/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="assets/css/nucleo-icons.css" rel="stylesheet"/>
 
-    <!-- Animate.css -->
+    <!-- Other -->
     <link href="assets/css/animate.css" rel="stylesheet"/>
+    <link href="assets/css/timeline.css" rel="stylesheet"/>
 
 </head>
 
@@ -49,7 +52,7 @@
                     <a href="#about" class="nav-link nav"><i
                             class="nc-icon nc-alert-circle-i"></i> About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="documentation/tutorial-components.html" class="nav-link"><i
                             class="nc-icon nc-book-bookmark"></i> Why</a>
                 </li>
@@ -79,7 +82,7 @@
 <div class="wrapper">
 
     <div class="page-header clickThrough section-dark">
-        <canvas id="c"></canvas>
+        <canvas class="heading-canvas" id="c"></canvas>
         <div class="filter"></div>
         <div class="content-center">
             <div class="container" style="margin-bottom: 3.5em">
@@ -104,13 +107,21 @@
     <a href="#about" class="scroll-down" address="true"> </a>
 
     <div class="main">
-
         <div class="section section-gray">
             <div class="container">
-                <div class="row text-justify">
+                <div class="row text-center">
                     <div class="col-md-10 offset-md-1 wow fadeIn">
-                        <h2 id="about" class="title">What is the Pango Project</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris
+                        <h2 id="about" class="title">What is the Pango Project?</h2>
+                        <h5 class="description text-justify">Quisque velit nisi, pretium ut lacinia in, elementum id
+                            enim. Mauris
+                            blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
+                            dapibus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac
+                            diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna
+                            dictum porta. Donec sollicitudin molestie malesuada. Curabitur non nulla sit amet nisl
+                            tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Vivamus
+                            suscipit tortor eget felis porttitor volutpat.
+                            <br><br>
+                            Quisque velit nisi, pretium ut lacinia in, elementum id enim. Mauris
                             blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta
                             dapibus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vestibulum ac
                             diam sit amet quam vehicula elementum sed sit amet dui. Cras ultricies ligula sed magna
@@ -122,7 +133,6 @@
                     </div>
                 </div>
                 <br/><br/>
-
                 <div class="row text-center">
                     <div class="col-md-3 wow fadeInUp" data-wow-offset="10">
                         <div class="info">
@@ -182,96 +192,453 @@
                     </div>
                 </div>
             </div>
-            <div class="section text-justify section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="container">
-                                    <h2 class="title">Why Do we need pango</h2>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-success">
-                                            <i class="nc-icon nc-layout-11"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h4 class="info-title">Components</h4>
-                                            <p>The kit comes with a huge number of components designed to look perfect together.</p>
-                                            <a href="#paper-kit" class="btn btn-link">See more</a>
-                                        </div>
-                                    </div>
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-warning">
-                                            <i class="nc-icon nc-palette"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h4 class="info-title">Beautiful Gallery</h4>
-                                            <p>Spend your time generating new ideas. You don't have to think of implementing anymore.</p>
-                                            <a href="#paper-kit" class="btn btn-link">See more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-danger">
-                                            <i class="nc-icon nc-touch-id"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h4 class="info-title">Secured</h4>
-                                            <p>Larger, yet dramatically thinner. More powerful, but remarkably power is efficient.</p>
-                                            <a href="#paper-kit" class="btn btn-link">See more</a>
-                                        </div>
-                                    </div>
-                                    <div class="info info-horizontal">
-                                        <div class="icon icon-primary">
-                                            <i class="nc-icon nc-delivery-fast"></i>
-                                        </div>
-                                        <div class="description">
-                                            <h4 class="info-title">Fast Prototyping</h4>
-                                            <p>Medium has a new head of product, while the startup behind the defunct texting app...</p>
-                                            <a href="#paper-kit" class="btn btn-link">See more</a>
-                                        </div>
-                                    </div>
-                                </div>
+        </div>
 
+        <div class="section text-justify section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="container">
+                                <h2 class="title">Why Do we need pango</h2>
+                                <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
+                                    Nulla quis lorem ut libero malesuada feugiat.</h5>
                             </div>
                         </div>
-                        <div class="col-md-5 offset-md-1">
-                            <div class="iphone-container">
-                                <img src="https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png" style="width: auto; height: auto">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="info info-horizontal">
+                                    <div class="icon icon-success">
+                                        <i class="nc-icon nc-layout-11"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Components</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut libero malesuada feugiat.</p>
+                                        <a href="#paper-kit" class="btn btn-link">See more</a>
+                                    </div>
+                                </div>
+                                <div class="info info-horizontal">
+                                    <div class="icon icon-warning">
+                                        <i class="nc-icon nc-palette"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Beautiful Gallery</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut libero malesuada feugiat.</p>
+                                        <a href="#paper-kit" class="btn btn-link">See more</a>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-md-6">
+                                <div class="info info-horizontal">
+                                    <div class="icon icon-danger">
+                                        <i class="nc-icon nc-touch-id"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Secured</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut libero malesuada feugiat.</p>
+                                        <a href="#paper-kit" class="btn btn-link">See more</a>
+                                    </div>
+                                </div>
+                                <div class="info info-horizontal">
+                                    <div class="icon icon-primary">
+                                        <i class="nc-icon nc-delivery-fast"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Fast Prototyping</h4>
+                                        <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                            lorem ut libero malesuada feugiat..</p>
+                                        <a href="#paper-kit" class="btn btn-link">See more</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 offset-md-1">
+                        <div class="iphone-container">
+                            <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/iphone.png"
+                                 style="width: auto; height: auto">
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <div class="section section-gray text-justify section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2  text-center">
+                        <h2 class="title">Who Should Use Pango</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row">
 
+                    <div class="col-md-6">
+                        <div class="ipad-container">
+                            <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/ipad.png">
+                        </div>
+                    </div>
 
+                    <div class="col-md-4 offset-1">
+                        <div class="info info-horizontal">
+                            <div class="icon icon-info">
+                                <i class="nc-icon nc-atom" aria-hidden="true"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">For Developers</h4>
+                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    libero malesuada feugiat.</p>
+                            </div>
+                        </div>
+
+                        <div class="info info-horizontal">
+                            <div class="icon icon-success">
+                                <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">For Designers Only</h4>
+                                <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    libero malesuada feugiat.</p>
+                            </div>
+                        </div>
+                        <div class="info info-horizontal">
+                            <div class="icon icon-danger">
+                                <i class="nc-icon nc-tie-bow" aria-hidden="true"></i>
+                            </div>
+                            <div class="description">
+                                <h4 class="info-title">Beautiful Examples</h4>
+                                <p>Speed up your development time or get inspired with the large number of example
+                                    pages.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
 
-        <footer class="footer">
+        <div class="ico-breakdown section-image">
             <div class="container">
                 <div class="row">
-                    <nav class="footer-nav">
-                        <ul>
-                            <li><a href="http://www.creative-tim.com">Creative Tim</a></li>
-                            <li><a href="http://blog.creative-tim.com">Blog</a></li>
-                            <li><a href="http://www.creative-tim.com/license">Licenses</a></li>
-                        </ul>
-                    </nav>
-                    <div class="credits ml-auto">
-                    <span class="copyright">
-                        © <script>document.write(new Date().getFullYear())</script>, made with <i
-                            class="fa fa-heart heart"></i> by Creative Tim
-                    </span>
+                    <div class="col text-center">
+                        <h2 class="title">ICO Breakdown</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-5 offset-md-1">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="nc-icon nc-atom" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="title">For Developers</h4>
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                                malesuada feugiat.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="title">For Designers</h4>
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                                malesuada feugiat.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bottom-line">
+                    <div class="col-sm-5 offset-md-1">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="nc-icon nc-paper" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="title">Example Pages Included</h4>
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                                malesuada feugiat.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-5">
+                        <div class="info">
+                            <div class="icon">
+                                <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
+                            </div>
+                            <h4 class="title">Save Time</h4>
+                            <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut libero
+                                malesuada feugiat.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 class="title">ICO Distribution</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <canvas id="ICOPieChart1" width="400" height="400"></canvas>
+                    </div>
+                    <div class="col-4 my-auto">
+                        <h5 class="description">
+                            <strong>Why We need Keth</strong>
+                            <ul>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+
+                        </h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 class="title">Funding Distribution</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <canvas id="ICOPieChart2" width="400" height="400"></canvas>
+                    </div>
+                    <div class="col-4 my-auto">
+                        <h5 class="description">
+                            <strong>Why We need Keth</strong>
+                            <ul>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                            </ul>
+
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section section-gray text-justify">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="title">Project Timeline</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <div class="timeline">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <time>1934</time>
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                        blanditiis praesentium
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <time>1937</time>
+                                        Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse
+                                        finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in,
+                                        pretium non nisi.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <time>1940</time>
+                                        Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at
+                                        pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin
+                                        eros.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <time>1943</time>
+                                        In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius
+                                        volutpat mattis. Vestibulum id magna est.
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <time>1946</time>
+                                        In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius
+                                        volutpat mattis. Vestibulum id magna est.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section section-gray text-justify">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 class="title">Meet The Team behind Pango</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                            lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-profile">
+                            <div class="card-block">
+                                <div class="card-avatar">
+                                    <a href="#avatar">
+                                        <img src="assets/img/faces/ayo-ogunseinde-2.jpg" alt="...">
+                                        <h4 class="card-title">Eric Thomson</h4>
+                                    </a>
+                                </div>
+                                <p class="card-description text-center">
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    libero malesuada feugiat.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-just-icon btn-linkedin"><i
+                                        class="fa fa-linkedin"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i
+                                        class="fa fa-dribbble"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card card-profile">
+                            <div class="card-block">
+                                <div class="card-avatar">
+                                    <a href="#avatar">
+                                        <img src="assets/img/faces/joe-gardner-2.jpg" alt="...">
+                                        <h4 class="card-title">Sophia West</h4>
+                                    </a>
+                                </div>
+                                <p class="card-description text-center">
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    libero malesuada feugiat.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-just-icon btn-linkedin"><i
+                                        class="fa fa-linkedin"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i
+                                        class="fa fa-dribbble"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-pinterest"><i class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card card-profile">
+                            <div class="card-block">
+                                <div class="card-avatar">
+                                    <a href="#avatar">
+                                        <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="...">
+                                        <h4 class="card-title">Lucas Andrew</h4>
+                                    </a>
+                                </div>
+                                <p class="card-description text-center">
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
+                                    libero malesuada feugiat.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-just-icon btn-youtube"><i class="fa fa-youtube"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2 text-center">
+                        <h2 class="title">Contact Pango</h2>
+                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
+                            quis lorem ut libero malesuada feugiat.</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Name</label>
+                                    <input class="form-control" placeholder="Name"
+                                           style="background-repeat: repeat; background-image: none; background-position: 0% 0%;">
+                                </div>
+                                <div class="col-md-6">
+                                    <label>Email</label>
+                                    <input class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <label>Message</label>
+                            <textarea class="form-control" rows="4"
+                                      placeholder="Tell us your thoughts and feelings..."
+                                      style="background-repeat: repeat; background-image: none; background-position: 0% 0%;"></textarea>
+                            <div class="row">
+                                <div class="col-md-4 offset-md-4">
+                                    <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of Main-->
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="http://www.creative-tim.com">Creative Tim</a></li>
+                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
+                    <li><a href="http://www.creative-tim.com/license">Licenses</a></li>
+                </ul>
+            </nav>
+            <div class="credits ml-auto">
+                    <span class="copyright">
+                        © <script>document.write(new Date().getFullYear())</script>, made with <i
+                            class="fa fa-heart heart"></i> by the Pango Project
+                    </span>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 <!-- Core JS Files -->
@@ -299,8 +666,15 @@
 <!--Other animations and small things -->
 <script src="assets/js/scroll-to-id.js"></script>
 <script src="assets/js/wow.min.js"></script>
+<script src="assets/js/timeline.js"></script>
+
 <script>
     new WOW().init();
 </script>
 
+<!--Chart.js include -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js" integrity="sha256-VNbX9NjQNRW+Bk02G/RO6WiTKuhncWI4Ey7LkSbE+5s=" crossorigin="anonymous"></script>
+<script src="assets/js/piechartlables.js"></script>
+<script src="assets/js/chart-generator.js"></script>
 </html>
