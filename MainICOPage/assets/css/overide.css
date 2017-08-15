@@ -145,7 +145,12 @@
     margin:10px;
 }
 
+/*Generic spacing for consistancy if we need to remove the top spacing*/
 .zero-spacing-top{
     margin-top: 0 !important;
     padding-top: 0 !important;;
+}
+/*push the icons a bit to the right to make them more centred*/
+.nc-navlinks{
+    padding-left: 5px;
 }
