@@ -36,8 +36,13 @@ chartData2 = {
 
 
 var pieOptions = {
+    elements: {
+        arc: {
+            borderWidth: 0
+        }
+    },
     title: {
-        display: false,
+        display: false
     },
     legend: {
         display: false
