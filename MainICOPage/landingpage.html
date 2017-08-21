@@ -3,16 +3,15 @@
 
 <head>
     <script src="assets/js/pace.min.js"></script>
-    <link href="assets/css/pace-loader.css" rel="stylesheet" />
+    <link href="assets/css/pace-loader.css" rel="stylesheet"/>
     <meta charset="utf-8"/>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
     <title>Pango Project</title>
-
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
-    <meta name="viewport" content="width=device-width"/>
+    <!--Responsive scaling-->
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0' name='viewport'/>
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet"/>
@@ -34,13 +33,13 @@
     <!-- Other -->
     <link href="assets/css/animate.css" rel="stylesheet"/>
     <link href="assets/css/timeline.css" rel="stylesheet"/>
+    <link href="assets/css/hover.css" rel="stylesheet"/>
 
 </head>
 
 <body>
-<a href="#top" class="back-to-top">Top</a>
 <nav class="navbar navbar-toggleable-md fixed-top navbar-transparent" color-on-scroll="500">
-    <div class="container">
+    <div class="container animated fadeInDown">
         <div class="navbar-translate">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                     data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false"
@@ -49,40 +48,49 @@
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
             </button>
-            <a class="navbar-brand" href="#top">The PANGO Project</a>
+            <a class="navbar-brand hvr-growfast" href="#top">The PANGO Project</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a href="#about" class="nav-link nav"><i
-                            class="nc-icon nc-alert-circle-i"></i> About</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav" id="top-menu">
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
+                    <a href="#about" class="nav-link"><i
+                            class="nc-icon nc-alert-circle-i nc-navlinks"></i> About</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
                     <a href="#why" class="nav-link"><i
-                            class="icon-question"></i> Why</a>
+                            class="icon-question nc-navlinks"></i> Why</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
                     <a href="#who" class="nav-link"><i
-                            class="icon-people"></i> Who</a>
+                            class="icon-people nc-navlinks"></i> Who</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
                     <a href="#whitepaper" class="nav-link"><i
-                            class="nc-icon nc-paper"></i> white paper </a>
+                            class="nc-icon nc-paper nc-navlinks"></i>
+                        <nobr>white paper</nobr>
+                    </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#ico" class="nav-link"><i
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
+                    <a href="#ico" class="nav-link nc-navlinks"><i
                             class="icon-wallet"></i> ICO</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
+                    <a href="#timeline" class="nav-link"><i
+                            class="icon-clock nc-navlinks"></i> Timeline</a>
+                </li>
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
                     <a href="#team" class="nav-link"><i
-                            class="nc-icon nc-circle-10"></i> Team</a>
+                            class="nc-icon nc-circle-10 nc-navlinks"></i> Team</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item text-center my-lg-auto hvr-growfast">
                     <a href="#contact" class="nav-link"><i
-                            class="icon-speech"></i> Contact US</a>
+                            class="icon-speech"></i> Contact</a>
                 </li>
-                <li class="nav-item">
-                    <button type="button" class="btn btn-default">MVP Demo</button>
+                <li class="nav-item text-center">
+                    <button type="button" class="btn btn-secondary my-lg-4 my-xl-3 hvr-growfast" data-toggle="modal"
+                            data-target="#mvpModal">
+                        MVP Demo
+                    </button>
                 </li>
             </ul>
         </div>
@@ -91,12 +99,13 @@
 <div class="wrapper">
 
     <div class="page-header clickThrough section-dark">
-        <canvas class="heading-canvas" id="c"></canvas>
+        <!--partical canvas background-->
+        <canvas class="heading-canvas hidden-sm-down" id="c"></canvas>
         <div class="filter"></div>
         <div class="content-center">
             <div class="container" style="margin-bottom: 3.5em">
                 <div class="title-brand">
-                    <h1 class="presentation-title">PANGO</h1>
+                    <h1 class="presentation-title wow bounceIn">PANGO</h1>
                     <!--<div class="fog-low">-->
                     <!--<img src="assets/img/fog-low.png" alt="">-->
                     <!--</div>-->
@@ -105,15 +114,16 @@
                     <!--</div>-->
                 </div>
 
-                <h2 style="margin: 0" class="presentation-subtitle text-center">Blockchain Certificates of
+                <h2 style="margin: 0" class="presentation-subtitle text-center wow fadeIn">Blockchain Certificates of
                     Authenticity</h2>
             </div>
         </div>
-        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); ">
+        <!--animated clouds-->
+        <div class="moving-clouds hidden-sm-down" style="background-image: url('assets/img/clouds.png'); ">
 
         </div>
     </div>
-    <a href="#about" class="scroll-down" address="true"> </a>
+    <a href="#about" class="scroll-down hidden-sm-down" address="true"> </a>
 
     <div class="main">
         <!--What is pango-->
@@ -139,9 +149,12 @@
                             tempus convallis quis ac lectus. Curabitur aliquet quam id dui posuere blandit. Vivamus
                             suscipit tortor eget felis porttitor volutpat.</h5>
                         <br>
-                        <a href="#" class="btn btn-info button-box">Read The White paper</a>
-                        <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
-                        <a href="#" class="btn btn-info button-box">View Source on Git </a>
+                        <a href="#" class="btn btn-default button-box">Read The White paper</a>
+                        <button type="button" class="btn btn-info btn-lg button-box hvr-growfast" data-toggle="modal"
+                                data-target="#mvpModal">
+                            Try the MVP Demo
+                        </button>
+                        <a href="#" class="btn btn-default button-box">View Source on Git </a>
                     </div>
                 </div>
             </div>
@@ -154,7 +167,8 @@
                         <h2 class="title">Key Points</h2>
                         <!--Row 1-->
                         <div class="row text-center">
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.0s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.0s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-primary">
                                         <i class="nc-icon nc-globe"></i>
@@ -166,11 +180,12 @@
                                             Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan
                                             id
                                             imperdiet et, porttitor at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-danger">
                                         <i class="nc-icon nc-paper"></i>
@@ -182,11 +197,12 @@
                                             libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
                                             porttitor
                                             at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-warning">
                                         <i class="nc-icon nc-spaceship"></i>
@@ -198,11 +214,12 @@
                                             libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
                                             porttitor
                                             at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-sucess">
                                         <i class="fa fa-chain"></i>
@@ -214,14 +231,16 @@
                                             libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
                                             porttitor
                                             at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <hr class="wow fadeIn">
                         <!--row 2-->
                         <div class="row text-center">
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.0s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.0s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-primary">
                                         <i class="nc-icon nc-globe"></i>
@@ -233,11 +252,12 @@
                                             Nulla quis lorem ut libero malesuada feugiat. Curabitur arcu erat, accumsan
                                             id
                                             imperdiet et, porttitor at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.2s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-danger">
                                         <i class="nc-icon nc-paper"></i>
@@ -249,11 +269,12 @@
                                             libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
                                             porttitor
                                             at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.4s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-warning">
                                         <i class="nc-icon nc-spaceship"></i>
@@ -265,11 +286,12 @@
                                             libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
                                             porttitor
                                             at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s" data-wow-offset="20">
+                            <div class="col-md-3 wow fadeInUp" data-wow-delay="0.6s"
+                                 data-wow-offset="20">
                                 <div class="info">
                                     <div class="icon icon-sucess">
                                         <i class="fa fa-chain"></i>
@@ -281,7 +303,7 @@
                                             libero malesuada feugiat. Curabitur arcu erat, accumsan id imperdiet et,
                                             porttitor
                                             at sem.</p>
-                                        <a href="#pkp" class="btn btn-link btn-danger">See more</a>
+                                        <a href="#pkp" class="btn btn-link btn-info">Learn more</a>
                                     </div>
                                 </div>
                             </div>
@@ -315,7 +337,6 @@
                                         <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
                                             quis
                                             lorem ut libero malesuada feugiat.</p>
-                                        <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
                                 </div>
                                 <div class="info info-horizontal">
@@ -327,7 +348,6 @@
                                         <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
                                             quis
                                             lorem ut libero malesuada feugiat.</p>
-                                        <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
                                 </div>
                             </div>
@@ -341,7 +361,6 @@
                                         <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
                                             quis
                                             lorem ut libero malesuada feugiat.</p>
-                                        <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
                                 </div>
                                 <div class="info info-horizontal">
@@ -353,14 +372,12 @@
                                         <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla
                                             quis
                                             lorem ut libero malesuada feugiat..</p>
-                                        <a href="#paper-kit" class="btn btn-link">See more</a>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <div class="col-md-5 offset-md-1 wow fadeInRight" data-wow-offset="500">
+                    <div class="col-md-5 offset-md-1 wow fadeInRight" data-wow-offset="200">
                         <div class="iphone-container">
                             <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/iphone.png"
                                  style="width: auto; height: auto">
@@ -382,7 +399,7 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="ipad-container wow fadeInLeft" data-wow-offset="500">
+                        <div class="ipad-container wow fadeInLeft" data-wow-offset="200">
                             <img src="http://demos.creative-tim.com/paper-kit-2-pro/assets/img/sections/ipad.png">
                         </div>
                     </div>
@@ -439,9 +456,12 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-md-10 offset-md-1 wow fadeInUp" data-wow-offset="20">
-                        <a href="#" class="btn btn-info button-box">Read The White paper</a>
-                        <a href="#" class="btn btn-secondary btn-lg button-box">Try the MVP Demo</a>
-                        <a href="#" class="btn btn-info button-box">View Source on Git</a>
+                        <a href="#" class="btn btn-default button-box">Read The White paper</a>
+                        <button type="button" class="btn btn-info btn-lg button-box hvr-growfast" data-toggle="modal"
+                                data-target="#mvpModal">
+                            Try the MVP Demo
+                        </button>
+                        <a href="#" class="btn btn-default button-box">View Source on Git</a>
                     </div>
                 </div>
             </div>
@@ -455,6 +475,7 @@
                         <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
                             Nulla quis
                             lorem ut libero malesuada feugiat.</h5>
+                        <div class="space-top"></div>
                     </div>
                 </div>
                 <div class="row">
@@ -463,7 +484,7 @@
                             <div class="icon">
                                 <i class="nc-icon nc-atom" aria-hidden="true"></i>
                             </div>
-                            <h4 class="title">For Developers</h4>
+                            <h4 class="title zero-spacing-top">For Developers</h4>
                             <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
                                 libero
                                 malesuada feugiat.</p>
@@ -475,7 +496,7 @@
                             <div class="icon">
                                 <i class="nc-icon nc-ruler-pencil" aria-hidden="true"></i>
                             </div>
-                            <h4 class="title">For Designers</h4>
+                            <h4 class="title zero-spacing-top">For Designers</h4>
                             <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
                                 libero
                                 malesuada feugiat.</p>
@@ -489,7 +510,7 @@
                             <div class="icon">
                                 <i class="nc-icon nc-paper" aria-hidden="true"></i>
                             </div>
-                            <h4 class="title">Example Pages Included</h4>
+                            <h4 class="title zero-spacing-top">Example Pages Included</h4>
                             <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
                                 libero
                                 malesuada feugiat.</p>
@@ -501,7 +522,7 @@
                             <div class="icon">
                                 <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
                             </div>
-                            <h4 class="title">Save Time</h4>
+                            <h4 class="title zero-spacing-top">Save Time</h4>
                             <p>Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis lorem ut
                                 libero
                                 malesuada feugiat.</p>
@@ -510,8 +531,8 @@
                 </div>
             </div>
         </div>
-        <!--ico Distribution-->
-        <div class="section">
+        <!--ICO Distribution-->
+        <div class="section section-gray">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
@@ -522,10 +543,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-lg-8 col-md-12">
                         <canvas id="ICOPieChart1" width="400" height="400"></canvas>
                     </div>
-                    <div class="col-4 my-auto">
+                    <div class="col-lg-4 my-auto col-md-12 text-center">
                         <h5 class="description">
                             <strong>Why We need Keth</strong>
                             <ul>
@@ -537,7 +558,11 @@
                         </h5>
                     </div>
                 </div>
-
+            </div>
+        </div>
+        <!--Funding Distribution-->
+        <div class="section">
+            <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
                         <h2 class="title">Funding Distribution</h2>
@@ -547,10 +572,10 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-8">
+                    <div class="col-lg-8 col-md-12">
                         <canvas id="ICOPieChart2" width="400" height="400"></canvas>
                     </div>
-                    <div class="col-4 my-auto">
+                    <div class="col-4 col-md-12 text-center my-auto">
                         <h5 class="description">
                             <strong>Why We need Keth</strong>
                             <ul>
@@ -575,7 +600,7 @@
                             lorem ut libero malesuada feugiat.</h5>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ">
                     <div class="col text-center">
                         <div class="timeline">
                             <ul>
@@ -630,95 +655,8 @@
                 </div>
             </div>
         </div>
-        <!--MVP demo-->
-        <div class="section section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
-                        <h2 id="team" class="title">Try the Pango Demo</h2>
-                        <h5 class="description">Quisque velit nisi, pretium ut lacinia in, elementum id enim.
-                            Nulla quis
-                            lorem ut libero malesuada feugiat.</h5>
-                    </div>
-                </div>
-                <div class="space-top"></div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="orange">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-basket"></i></span>
-                                </div>
-                                <h3 class="card-title">$199</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 5 and 20 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="yellow">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-watch-time"></i></span>
-                                </div>
-                                <h3 class="card-title">$249</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 21 and 59 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="green">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-settings"></i></span>
-                                </div>
-                                <h3 class="card-title">$359</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 60 and 159 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-pricing" data-color="blue">
-                            <div class="card-block">
-                                <div class="card-icon">
-                                    <span class="icon-simple"><i class="nc-icon nc-istanbul"></i></span>
-                                </div>
-                                <h3 class="card-title">$599</h3>
-
-                                <p class="card-description">
-                                    This is good if your company size is between 160 and 299 employees.
-                                </p>
-                                <div class="card-footer">
-                                    <a href="#pablo" class="btn btn-neutral btn-round">Choose Plan</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!--Pango Team-->
-        <div class="section section-gray">
+        <div class="section section-image">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2 text-center wow fadeIn" data-wow-offset="20">
@@ -729,7 +667,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="20">
                         <div class="card card-profile">
                             <div class="card-block">
                                 <div class="card-avatar">
@@ -755,7 +693,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="20">
                         <div class="card card-profile">
                             <div class="card-block">
                                 <div class="card-avatar">
@@ -781,7 +719,86 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="20">
+                        <div class="card card-profile">
+                            <div class="card-block">
+                                <div class="card-avatar">
+                                    <a href="#avatar">
+                                        <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="...">
+                                        <h4 class="card-title">Lucas Andrew</h4>
+                                    </a>
+                                </div>
+                                <p class="card-description text-center">
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
+                                    libero malesuada feugiat.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-just-icon btn-youtube"><i
+                                        class="fa fa-youtube"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-twitter"><i
+                                        class="fa fa-twitter"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i
+                                        class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="20">
+                        <div class="card card-profile">
+                            <div class="card-block">
+                                <div class="card-avatar">
+                                    <a href="#avatar">
+                                        <img src="assets/img/faces/ayo-ogunseinde-2.jpg" alt="...">
+                                        <h4 class="card-title">Eric Thomson</h4>
+                                    </a>
+                                </div>
+                                <p class="card-description text-center">
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
+                                    libero malesuada feugiat.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-just-icon btn-linkedin"><i
+                                        class="fa fa-linkedin"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i
+                                        class="fa fa-dribbble"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-instagram"><i
+                                        class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="20">
+                        <div class="card card-profile">
+                            <div class="card-block">
+                                <div class="card-avatar">
+                                    <a href="#avatar">
+                                        <img src="assets/img/faces/joe-gardner-2.jpg" alt="...">
+                                        <h4 class="card-title">Sophia West</h4>
+                                    </a>
+                                </div>
+                                <p class="card-description text-center">
+                                    Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla quis
+                                    lorem ut
+                                    libero malesuada feugiat.
+                                </p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="#pablo" class="btn btn-just-icon btn-linkedin"><i
+                                        class="fa fa-linkedin"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-dribbble"><i
+                                        class="fa fa-dribbble"></i></a>
+                                <a href="#pablo" class="btn btn-just-icon btn-pinterest"><i
+                                        class="fa fa-pinterest"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 wow fadeInUp" data-wow-offset="20">
                         <div class="card card-profile">
                             <div class="card-block">
                                 <div class="card-avatar">
@@ -840,7 +857,7 @@
                                       style="background-repeat: repeat; background-image: none; background-position: 0% 0%;"></textarea>
                             <div class="row">
                                 <div class="col-md-4 offset-md-4">
-                                    <button class="btn btn-danger btn-lg btn-fill">Send Message</button>
+                                    <button class="btn btn-info btn-lg btn-fill">Send Message</button>
                                 </div>
                             </div>
                         </form>
@@ -850,38 +867,167 @@
         </div>
     </div>
     <!--End of Main-->
+    <a id="back-top" href="#top"><i class="fa fa-chevron-up hidden-sm-down"></i></a>
 </div>
 
 
-<footer class="footer">
+<footer class="footer footer-black footer-big">
     <div class="container">
         <div class="row">
-            <nav class="footer-nav">
-                <ul>
-                    <li><a href="http://www.creative-tim.com">Creative Tim</a></li>
-                    <li><a href="http://blog.creative-tim.com">Blog</a></li>
-                    <li><a href="http://www.creative-tim.com/license">Licenses</a></li>
-                </ul>
-            </nav>
-            <div class="credits ml-auto">
-                    <span class="copyright">
-                        © <script>document.write(new Date().getFullYear())</script>, made with <i
-                            class="fa fa-heart heart"></i> by the Pango Project
-                    </span>
+            <div class="col-md-2 text-center col-sm-3 col-xs-12">
+                <h4>The Pango Project</h4>
+                <div class="social-area">
+                    <a class="btn btn-just-icon btn-round btn-facebook">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-just-icon btn-round btn-twitter">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-just-icon btn-round btn-google">
+                        <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9 offset-md-1 col-sm-9 col-xs-12">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="links">
+                            <ul class="uppercase-links stacked-links">
+                                <li>
+                                    <a href="#paper-kit">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Why
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Who
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        White Paper
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Ico
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="links">
+                            <ul class="uppercase-links stacked-links">
+                                <li>
+                                    <a href="#paper-kit">
+                                        Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        About Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6">
+                        <div class="links">
+                            <ul class="uppercase-links stacked-links">
+                                <li>
+                                    <a href="#paper-kit">
+                                        Portfolio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        How it works
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#paper-kit">
+                                        Testimonials
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 text-center">
+                        <div class="links">
+                            <ul class="stacked-links text-center">
+                                <li>
+                                    <h4>Powered By</h4>
+                                </li>
+                                <li>
+                                    <br>
+                                    <a href="https://www.ethereum.org/" target="_blank"><img
+                                            src="assets/img/ETHEREUM-ICON_Blank.png"
+                                            style="height: 75px; width: auto" class="my-auto"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="copyright">
+                    <div class="pull-left">
+                        ©
+                        2017
+                        Pango Project
+                    </div>
+                    <div class="links pull-right">
+                        <ul>
+                            <li>
+                                <a href="#paper-kit">
+                                    ICO terms
+                                </a>
+                            </li>
+                            |
+                            <li>
+                                <a href="#paper-kit">
+                                    Terms
+                                </a>
+                            </li>
+                            |
+                            <li>
+                                <a href="#paper-kit">
+                                    Privacy
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
 </footer>
 </body>
 
 <!-- Core JS Files -->
-<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
-<script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>-->
+<!--Not sure if we need jquery UI. will have to see later on...-->
+<!--<script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>-->
 <script src="assets/js/tether.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">-->
 
 <!-- Switches -->
-<script src="assets/js/bootstrap-switch.min.js"></script>
+<!--<script src="assets/js/bootstrap-switch.min.js"></script>-->
 
 <!--  Plugins for Slider -->
 <!--<script src="assets/js/nouislider.js"></script>-->
@@ -909,4 +1055,33 @@
         integrity="sha256-VNbX9NjQNRW+Bk02G/RO6WiTKuhncWI4Ey7LkSbE+5s=" crossorigin="anonymous"></script>
 <script src="assets/js/piechartlables.js"></script>
 <script src="assets/js/chart-generator.js"></script>
+
+<div class="modal fade" id="mvpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="my-auto">Minimum Viable Product Demo</h2>
+            </div>
+            <div class="modal-body"> Far far away, behind the word mountains, far from the countries Vokalia and
+                Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+                Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with
+                the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
+                your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost
+                unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to
+                leave for the far World of Grammar.
+            </div>
+            <div class="modal-footer">
+                <div class="left-side">
+                    <button type="button" class="btn btn-primary btn-link" data-dismiss="modal">Demo Version</button>
+                </div>
+                <div class="divider"></div>
+                <div class="right-side">
+                    <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Testnet Version</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </html>

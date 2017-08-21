@@ -409,7 +409,7 @@ Particle.prototype = (function(o) {
     // GUI Control
 
     control = {
-        particleNum: 120
+        particleNum: 100
     };
 
 
@@ -481,8 +481,8 @@ Particle.prototype = (function(o) {
         bufferCtx.restore();
 
         context.drawImage(bufferCvs, 0, 0);
+        setTimeout(requestAnimationFrame(loop),3000);
 
-        requestAnimationFrame(loop);
     };
     loop();
 

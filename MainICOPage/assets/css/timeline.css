@@ -80,7 +80,7 @@ time {
 }
 
 .timeline ul li.in-view::after {
-    background: #FFF;
+    background: darkgray;
 }
 
 .timeline ul li div {

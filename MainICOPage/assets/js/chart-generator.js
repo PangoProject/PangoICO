@@ -36,8 +36,13 @@ chartData2 = {
 
 
 var pieOptions = {
+    elements: {
+        arc: {
+            borderWidth: 0
+        }
+    },
     title: {
-        display: false,
+        display: false
     },
     legend: {
         display: false
@@ -140,8 +145,8 @@ function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
     // the offsets here are to ensure animation only occure on scroll past the graph points
-    var elemTop = $(elem).offset().top + 400;
-    var elemBottom = elemTop + $(elem).height()-600;
+    var elemTop = $(elem).offset().top + 200;
+    var elemBottom = elemTop + $(elem).height()-200;
 
     return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
 }
