@@ -1,4 +1,4 @@
-Fix borken responsive design on smaller screens
+/*Fix borken responsive design on smaller screens*/
 html, body {
     overflow-x:hidden
 }
@@ -15,6 +15,10 @@ html, body {
 
 .clickThrough {
     pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
 }
 
 .scroll-down {

@@ -481,8 +481,8 @@ Particle.prototype = (function(o) {
         bufferCtx.restore();
 
         context.drawImage(bufferCvs, 0, 0);
+        setTimeout(requestAnimationFrame(loop),3000);
 
-        requestAnimationFrame(loop);
     };
     loop();
 
