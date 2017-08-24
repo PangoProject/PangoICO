@@ -645,3 +645,8 @@
 .social-area.pull-right {
     float: none !important;
 }
+
+.card-product .card-img-top {
+    background-color: transparent;
+    box-shadow: none !important;
+}

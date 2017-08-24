@@ -2595,6 +2595,12 @@ textarea.form-control {
     -moz-transform: none;
 }
 
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
 .section-dark .card-profile.card-plain .card-title {
     color: #FFFFFF !important;
 }
