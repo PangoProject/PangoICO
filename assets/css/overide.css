@@ -155,3 +155,7 @@ nav li.active {
     /*padding-left: 15px;*/
     /*padding-top: 0;*/
 /*}*/
+
+.btn-group{
+    margin:0px !important;
+}

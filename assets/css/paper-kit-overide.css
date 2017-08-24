@@ -426,6 +426,45 @@
     opacity: 1;
 }
 
+.btn-slack {
+    color: #FFFFFF;
+    background-color: #3BB086;
+    border-color: #3BB086;
+    opacity: 0.8;
+}
+.btn-slack:hover, .btn-slack:focus, .btn-slack:active, .btn-slack.active, .open > .btn-slack.dropdown-toggle {
+    background-color: #3BB086;
+    border-color: #3BB086;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.btn-slack.btn-border {
+    border-color: #3BB086;
+    color: #3BB086;
+}
+.btn-slack.btn-border:hover, .btn-slack.btn-border:focus, .btn-slack.btn-border:active, .btn-slack.btn-border.active, .open > .btn-slack.btn-border.dropdown-toggle {
+    background-color: #3BB086;
+    border-color: #3BB086;
+    color: rgba(255, 255, 255, 0.7);
+}
+.btn-slack.btn-border:disabled, .btn-slack.btn-border[disabled], .btn-slack.btn-border.disabled {
+    background-color: transparent;
+    border-color: #3BB086;
+}
+.btn-slack.btn-link {
+    color: #3BB086;
+    opacity: 0.8;
+}
+.btn-slack.btn-link:hover, .btn-slack.btn-link:focus, .btn-slack.btn-link:active, .btn-slack.btn-link.active, .open > .btn-slack.btn-link.dropdown-toggle {
+    background-color: transparent;
+    color: #3BB086;
+    opacity: 1;
+}
+.btn-slack.btn-link:hover i, .btn-slack.btn-link:focus i, .btn-slack.btn-link:active i, .btn-slack.btn-link.active i, .open > .btn-slack.btn-link.dropdown-toggle i {
+    color: #3BB086;
+    opacity: 1;
+}
+
 .btn-reddit {
     color: #FFFFFF;
     background-color: #ff4500;
@@ -543,6 +582,9 @@
 .label-reddit {
     background-color: #ff4500;
 }
+.label-slack {
+    background-color: #3BB086;
+}
 
 .label-tumblr {
     background-color: #35465c;
@@ -586,6 +628,10 @@
 
 .icon-reddit {
     color: #ff4500;
+}
+
+.icon-slack {
+    color: #3BB086;
 }
 
 .icon-tumblr {

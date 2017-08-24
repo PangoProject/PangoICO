@@ -5638,69 +5638,69 @@ textarea.form-control {
     bottom: -11px;
 }
 
-.btn-twitter {
-    color: #55acee !important;
-}
-.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active {
-    color: #55acee !important;
-}
+/*.btn-twitter {*/
+    /*color: #55acee !important;*/
+/*}*/
+/*.btn-twitter:hover, .btn-twitter:focus, .btn-twitter:active {*/
+    /*color: #55acee !important;*/
+/*}*/
 
-.btn-facebook {
-    color: #3b5998 !important;
-}
-.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active {
-    color: #3b5998 !important;
-}
+/*.btn-facebook {*/
+    /*color: #3b5998 !important;*/
+/*}*/
+/*.btn-facebook:hover, .btn-facebook:focus, .btn-facebook:active {*/
+    /*color: #3b5998 !important;*/
+/*}*/
 
-.btn-google {
-    color: #dd4b39 !important;
-}
-.btn-google:hover, .btn-google:focus, .btn-google:active {
-    color: #dd4b39 !important;
-}
+/*.btn-google {*/
+    /*color: #dd4b39 !important;*/
+/*}*/
+/*.btn-google:hover, .btn-google:focus, .btn-google:active {*/
+    /*color: #dd4b39 !important;*/
+/*}*/
 
-.btn-linkedin {
-    color: #0976b4 !important;
-}
-.btn-linkedin:hover, .btn-linkedin:focus, .btn-linkedin:active {
-    color: #0976b4 !important;
-}
+/*.btn-linkedin {*/
+    /*color: #0976b4 !important;*/
+/*}*/
+/*.btn-linkedin:hover, .btn-linkedin:focus, .btn-linkedin:active {*/
+    /*color: #0976b4 !important;*/
+/*}*/
 
-.btn-twitter-bg {
-    background-color: #55acee !important;
-    border-color: #55acee !important;
-}
-.btn-twitter-bg:hover {
-    background-color: #3ea1ec !important;
-    border-color: #3ea1ec !important;
-}
+/*.btn-twitter-bg {*/
+    /*background-color: #55acee !important;*/
+    /*border-color: #55acee !important;*/
+/*}*/
+/*.btn-twitter-bg:hover {*/
+    /*background-color: #3ea1ec !important;*/
+    /*border-color: #3ea1ec !important;*/
+/*}*/
 
-.btn-facebook-bg {
-    background-color: #3b5998 !important;
-    border-color: #3b5998 !important;
-}
-.btn-facebook-bg:hover {
-    background-color: #344e86 !important;
-    border-color: #344e86 !important;
-}
+/*.btn-facebook-bg {*/
+    /*background-color: #3b5998 !important;*/
+    /*border-color: #3b5998 !important;*/
+/*}*/
+/*.btn-facebook-bg:hover {*/
+    /*background-color: #344e86 !important;*/
+    /*border-color: #344e86 !important;*/
+/*}*/
 
-.btn-google-bg {
-    background-color: #dd4b39 !important;
-    border-color: #dd4b39 !important;
-}
-.btn-google-bg:hover {
-    background-color: #d73925 !important;
-    border-color: #d73925 !important;
-}
+/*.btn-google-bg {*/
+    /*background-color: #dd4b39 !important;*/
+    /*border-color: #dd4b39 !important;*/
+/*}*/
+/*.btn-google-bg:hover {*/
+    /*background-color: #d73925 !important;*/
+    /*border-color: #d73925 !important;*/
+/*}*/
 
-.btn-github-bg {
-    background-color: #767676 !important;
-    border-color: #767676 !important;
-}
-.btn-github-bg:hover {
-    background-color: dimgray !important;
-    border-color: dimgray !important;
-}
+/*.btn-github-bg {*/
+    /*background-color: #767676 !important;*/
+    /*border-color: #767676 !important;*/
+/*}*/
+/*.btn-github-bg:hover {*/
+    /*background-color: dimgray !important;*/
+    /*border-color: dimgray !important;*/
+/*}*/
 
 .landing-alert {
     margin-bottom: 0;
