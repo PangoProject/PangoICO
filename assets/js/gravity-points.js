@@ -300,7 +300,7 @@ Particle.prototype = (function(o) {
 
     // Configs
 
-    var BACKGROUND_COLOR      = 'rgba(60,160,160, 0.1)',
+    var BACKGROUND_COLOR      = 'rgba(255,255,255,0.5)',
         PARTICLE_RADIUS       = 1,
         G_POINT_RADIUS        = 15,
         G_POINT_RADIUS_LIMITS = 60;
@@ -460,7 +460,7 @@ Particle.prototype = (function(o) {
 
         len = particles.length;
         bufferCtx.save();
-        bufferCtx.fillStyle = bufferCtx.strokeStyle = '#fff';
+        bufferCtx.fillStyle = bufferCtx.strokeStyle = '#242424';
         bufferCtx.lineCap = bufferCtx.lineJoin = 'round';
         bufferCtx.lineWidth = PARTICLE_RADIUS * 2;
         bufferCtx.beginPath();
