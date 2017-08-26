@@ -256,8 +256,8 @@ GravityPoint.prototype = (function(o) {
 
         r = Math.random() * this.currentRadius * 0.7 + this.currentRadius * 0.3;
         grd = ctx.createRadialGradient(this.x, this.y, r, this.x, this.y, this.currentRadius);
-        grd.addColorStop(0, 'rgba(0, 0, 0, 1)');
-        grd.addColorStop(1, Math.random() < 0.2 ? 'rgba(255, 196, 0, 0.15)' : 'rgba(103, 181, 191, 0.75)');
+        grd.addColorStop(0, 'rgba(197, 65, 36, 1)');
+        // grd.addColorStop(1, Math.random() < 0.2 ? 'rgba(255, 196, 0, 0.15)' : 'rgba(103, 181, 191, 0.75)');
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.currentRadius, 0, Math.PI * 2, false);
         ctx.fillStyle = grd;
