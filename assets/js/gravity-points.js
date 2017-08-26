@@ -224,7 +224,7 @@ GravityPoint.prototype = (function(o) {
                 this.addSpeed(absorp);
 
                 garea = g.radius * g.radius * Math.PI;
-                this.currentRadius = Math.sqrt((area + garea * 3) / Math.PI);
+                this.currentRadius = Math.sqrt((area + garea * 2) / Math.PI);
                 this.radius = Math.sqrt((area + garea) / Math.PI);
             }
 
