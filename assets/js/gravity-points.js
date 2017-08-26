@@ -130,7 +130,7 @@ Vector.prototype = {
 function GravityPoint(x, y, radius, targets) {
     Vector.call(this, x, y);
     this.radius = radius;
-    this.currentRadius = radius * 0.5;
+    this.currentRadius = radius * 0.85;
 
     this._targets = {
         particles: targets.particles || [],
@@ -302,7 +302,7 @@ Particle.prototype = (function(o) {
 
     var BACKGROUND_COLOR      = 'rgba(255,255,255,0.5)',
         PARTICLE_RADIUS       = 1,
-        G_POINT_RADIUS        = 15,
+        G_POINT_RADIUS        = 12,
         G_POINT_RADIUS_LIMITS = 60;
 
 
