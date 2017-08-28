@@ -114,6 +114,48 @@
     opacity: 1;
 }
 
+
+
+.btn-telegram {
+    color: #FFFFFF;
+    background-color: #2FADE6;
+    border-color: #2FADE6;
+    opacity: 0.8;
+}
+.btn-telegram:hover, .btn-telegram:focus, .btn-telegram:active, .btn-telegram.active, .open > .btn-telegram.dropdown-toggle {
+    background-color: #2FADE6;
+    border-color: #2FADE6;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.btn-telegram.btn-border {
+    border-color: #2FADE6;
+    color: #2FADE6;
+}
+.btn-telegram.btn-border:hover, .btn-telegram.btn-border:focus, .btn-telegram.btn-border:active, .btn-telegram.btn-border.active, .open > .btn-telegram.btn-border.dropdown-toggle {
+    background-color: #2FADE6;
+    border-color: #2FADE6;
+    color: rgba(255, 255, 255, 0.7);
+}
+.btn-telegram.btn-border:disabled, .btn-telegram.btn-border[disabled], .btn-telegram.btn-border.disabled {
+    background-color: transparent;
+    border-color: #2FADE6;
+}
+.btn-telegram.btn-link {
+    color: #2FADE6;
+    opacity: 0.8;
+}
+.btn-telegram.btn-link:hover, .btn-telegram.btn-link:focus, .btn-telegram.btn-link:active, .btn-telegram.btn-link.active, .open > .btn-telegram.btn-link.dropdown-toggle {
+    background-color: transparent;
+    color: #2FADE6;
+    opacity: 1;
+}
+.btn-telegram.btn-link:hover i, .btn-telegram.btn-link:focus i, .btn-telegram.btn-link:active i, .btn-telegram.btn-link.active i, .open > .btn-telegram.btn-link.dropdown-toggle i {
+    color: #2FADE6;
+    opacity: 1;
+}
+
+
 .btn-twitter {
     color: #FFFFFF;
     background-color: #55acee;
@@ -465,6 +507,45 @@
     opacity: 1;
 }
 
+.btn-gitter {
+    color: #FFFFFF;
+    background-color: #372F38;
+    border-color: #372F38;
+    opacity: 0.8;
+}
+.btn-gitter:hover, .btn-gitter:focus, .btn-gitter:active, .btn-gitter.active, .open > .btn-gitter.dropdown-toggle {
+    background-color: #372F38;
+    border-color: #372F38;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.btn-gitter.btn-border {
+    border-color: #372F38;
+    color: #372F38;
+}
+.btn-gitter.btn-border:hover, .btn-gitter.btn-border:focus, .btn-gitter.btn-border:active, .btn-gitter.btn-border.active, .open > .btn-gitter.btn-border.dropdown-toggle {
+    background-color: #372F38;
+    border-color: #372F38;
+    color: rgba(255, 255, 255, 0.7);
+}
+.btn-gitter.btn-border:disabled, .btn-gitter.btn-border[disabled], .btn-gitter.btn-border.disabled {
+    background-color: transparent;
+    border-color: #372F38;
+}
+.btn-gitter.btn-link {
+    color: #372F38;
+    opacity: 0.8;
+}
+.btn-gitter.btn-link:hover, .btn-gitter.btn-link:focus, .btn-gitter.btn-link:active, .btn-gitter.btn-link.active, .open > .btn-gitter.btn-link.dropdown-toggle {
+    background-color: transparent;
+    color: #372F38;
+    opacity: 1;
+}
+.btn-gitter.btn-link:hover i, .btn-gitter.btn-link:focus i, .btn-gitter.btn-link:active i, .btn-gitter.btn-link.active i, .open > .btn-gitter.btn-link.dropdown-toggle i {
+    color: #372F38;
+    opacity: 1;
+}
+
 .btn-reddit {
     color: #FFFFFF;
     background-color: #ff4500;
@@ -547,6 +628,9 @@
     background-color: #3b5998;
 }
 
+.label-telegram {
+    background-color: #2FADE6;
+}
 .label-twitter {
     background-color: #55acee;
 }
@@ -584,6 +668,9 @@
 }
 .label-slack {
     background-color: #3BB086;
+}
+.label-gitter {
+    background-color: #372F38;
 }
 
 .label-tumblr {

@@ -244,26 +244,6 @@ pk = {
 
 }
 
-examples = {
-    initContactUsMap: function(){
-        var myLatlng = new google.maps.LatLng(44.433530, 26.093928);
-        var mapOptions = {
-          zoom: 14,
-          center: myLatlng,
-          scrollwheel: false, //we disable de scroll over the map, it is a really annoing when you scroll through page
-        }
-        var map = new google.maps.Map(document.getElementById("contactUsMap"), mapOptions);
-
-        var marker = new google.maps.Marker({
-            position: myLatlng,
-            title:"Hello World!"
-        });
-
-        // To add the marker to the map, call setMap();
-        marker.setMap(map);
-        }
-}
-
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
